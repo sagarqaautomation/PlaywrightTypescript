@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:qa:local":"cross-env environment=qa npx playwright test --headed --workers 1 --project=chromium --grep @smoke"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -6,7 +6,7 @@ type MyFixtures={
     browser:Browser;
     context:BrowserContext;
     page:Page;
-    loginPage:LoginPage;
+    Login:LoginPage;
 };
 
 const test =base.extend<MyFixtures>({
@@ -24,7 +24,9 @@ const test =base.extend<MyFixtures>({
 
     },
 
-    loginPage:async({page},use)=>{
+    Login:async({page},use)=>{
         await use(new LoginPage(page));  
     }
 });
+
+export {test};
