@@ -1,5 +1,5 @@
 import {BrowserContext,Browser,Page,test as base} from '@playwright/test'
-import { LoginPage } from '../PlaywrightTypescript/Pages/Login';
+import { LoginPage } from '../Pages/Login';
 
 
 type MyFixtures={
