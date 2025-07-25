@@ -1,0 +1,10 @@
+{
+    "sqlqueries": [
+        {
+        "query1": "SELECT * FROM employees WHERE ROWNUM <= 5"
+        },
+        {
+        "query2": "SELECT * FROM departments WHERE ROWNUM <= 5"
+        }
+    ]
+}
