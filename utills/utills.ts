@@ -1,12 +1,12 @@
 export class RuntimeData {
     private data: Map<string, any> = new Map();
 
-    // Add data to the store
-    async setData(key: string, value: any): Promise<void> {
+    // Add data
+     async  setData(key: string, value: any): Promise<void> {
         this.data.set(key, value);
     }
 
-    // Get data from the store
+    // Get data 
     async getData(key: string): Promise<any> {
         if (!this.data.has(key)) {
             throw new Error(`Key "${key}" not found in runtime data store.`);
@@ -14,7 +14,7 @@ export class RuntimeData {
         return this.data.get(key);
     }
 
-    // Add a list of key-value pairs to the store
+    // Add a list of key-value pairs
     async setListOfData(dataList: { key: string; value: any }[]): Promise<void> {
         for (const item of dataList) {
             this.data.set(item.key, item.value);
